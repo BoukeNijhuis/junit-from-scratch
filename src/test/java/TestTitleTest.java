@@ -3,10 +3,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-class MethodNamingTest {
+class TestTitleTest {
 
     @Test
-    @DisplayName("this is a very description of a test")
+    @DisplayName("this is a long description of a test")
     void methodNamingTest() {
         assertNotEquals(true, false);
     }
