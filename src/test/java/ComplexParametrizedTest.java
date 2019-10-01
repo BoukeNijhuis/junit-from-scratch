@@ -11,16 +11,13 @@ class ComplexParametrizedTest {
 
     @ParameterizedTest
     @MethodSource("testInputs")
-    void complexParametrizedTest(int a, int b, int res)
-    {
-        assertEquals(Math.min(a,b), res);
+    void complexParametrizedTest(int a, int b, int res) {
+        assertEquals(Math.min(a, b), res);
     }
 
     private static Stream<Arguments> testInputs() {
-        return Stream.of(
-            Arguments.of(1, 2, 1),
-            Arguments.of(3, 2, 2),
-            Arguments.of(Integer.MIN_VALUE, 1, Integer.MIN_VALUE)
-        );
+        return Stream
+            .of(Arguments.of(1, 2, 1),
+                Arguments.of(3, 2, 2));
     }
 }

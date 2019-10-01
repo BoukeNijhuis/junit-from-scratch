@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 class TestTitleTest {
 
     @Test
-    @DisplayName("this is a long description of a test")
+    @DisplayName("this is a human readable title")
     void methodNamingTest() {
         assertNotEquals(true, false);
     }
